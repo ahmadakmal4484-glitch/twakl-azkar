@@ -2,6 +2,7 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Azkar</title>
 
 <style>
@@ -128,6 +129,56 @@ body.dark .toggle span {
 .section.active {
   display: block;
 }
+
+/* ---------- Responsive ---------- */
+
+/* Mobile (default) */
+.content {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .content {
+    max-width: 750px;
+  }
+
+  .tabs {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .tab {
+    font-size: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .content {
+    max-width: 900px;
+  }
+
+  .zikr {
+    padding: 24px;
+  }
+
+  .zikr p {
+    font-size: 20px;
+  }
+
+  #logo {
+    height: 90px;
+  }
+}
+
+/* Touch improvement */
+.tasbeeh {
+  width: 90px;
+  height: 90px;
+}
+
 </style>
 </head>
 
